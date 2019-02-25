@@ -73,7 +73,7 @@ class IdentityAPI {
 
       if (!response.ok) {
         return response.text().then(data => {
-          return Promise.reject({ stauts: response.status, data });
+          return Promise.reject({ status: response.status, data });
         });
       }
       return response.text().then(data => {
